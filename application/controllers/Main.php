@@ -14,4 +14,8 @@ class Main extends CI_Controller {
     public function shop(){
         $this->load->view('shop');
     }
+
+    public function shopdetail(){
+        $this->load->view('shopdetail');
+    }
 }
