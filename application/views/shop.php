@@ -9,7 +9,7 @@
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="assets/img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -572,15 +572,12 @@
             </div>
         </div>
         <div class="row border-top border-light mx-xl-5 py-4">
-            <div class="col-md-6 px-xl-0">
+            <div class="col-md-12 px-xl-0">
                 <p class="mb-md-0 text-center text-md-left text-dark">
                     &copy; <a class="text-dark font-weight-semi-bold" href="#">Miss Rose Cosmetics</a>. All Rights Reserved. Designed
                     by
                     <a class="text-dark font-weight-semi-bold" href="https://hassixmalik.github.io">@hassixmalik</a><br>
                 </p>
-            </div>
-            <div class="col-md-6 px-xl-0 text-center text-md-right">
-                <img class="img-fluid" src="assets/img/payments.png" alt="">
             </div>
         </div>
     </div>

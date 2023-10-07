@@ -147,9 +147,9 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="welcome" class="nav-item nav-link active">Home</a>
                             <a href="<?php echo base_url('shop');?>" class="nav-item nav-link">Shop</a>
-                            <a href="detail.html" class="nav-item nav-link">Shop Detail</a>
+                            <a href="<?php echo base_url('shopdetail');?>" class="nav-item nav-link">Shop Detail</a>
                             <a href="" class="nav-item nav-link">Deals</a>
                             <a href="" class="nav-item nav-link">About Us</a>
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -726,15 +726,12 @@
             </div>
         </div>
         <div class="row border-top border-light mx-xl-5 py-4">
-            <div class="col-md-6 px-xl-0">
+            <div class="col-md-12 px-xl-0">
                 <p class="mb-md-0 text-center text-md-left text-dark">
                     &copy; <a class="text-dark font-weight-semi-bold" href="#">Miss Rose Cosmetics</a>. All Rights Reserved. Designed
                     by
                     <a class="text-dark font-weight-semi-bold" href="https://hassixmalik.github.io">@hassixmalik</a><br>
                 </p>
-            </div>
-            <div class="col-md-6 px-xl-0 text-center text-md-right">
-                <img class="img-fluid" src="assets/img/payments.png" alt="">
             </div>
         </div>
     </div>

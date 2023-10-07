@@ -1,0 +1,49 @@
+Certainly, here's a brief description of each table and how they are used in your e-commerce system:
+
+1. **Products Table:**
+   - This table stores information about the products available in your e-commerce store.
+   - `ProductID` is the unique identifier for each product.
+   - `Category` categorizes products by type (e.g., facial, eyes, lips).
+   - `Title` represents the name or title of the product.
+   - `Price` is the regular price of the product.
+   - `Discount` specifies any discounts applied to the product.
+   - `Description` provides detailed information about the product.
+   - `Size` and `Shades` are optional attributes that may vary for different products.
+   - `ImageURL` stores the path to the product image for display.
+
+2. **Inventory Table:**
+   - This table tracks the quantity of each product in your inventory.
+   - `InventoryID` is a unique identifier for each inventory entry.
+   - `ProductID` links to the Products Table to associate inventory with specific products.
+   - `Quantity` records how many of each product are currently in stock.
+
+3. **Cart Table:**
+   - The Cart table is used to manage user shopping carts.
+   - `CartID` is a unique identifier for each shopping cart.
+   - `UserID` (if you have user accounts) links a cart to a specific user.
+   - `ProductID` links to the Products Table to specify the products in the cart.
+   - `Quantity` indicates how many of each item are in the cart.
+
+4. **Users Table (if you have user accounts):**
+   - This table stores information about registered users of your e-commerce site.
+   - `UserID` is a unique identifier for each user.
+   - `Username`, `Password`, and `Email` are essential for user authentication.
+   - Other user-related information such as name and address can be stored here.
+
+5. **Orders Table:**
+   - The Orders table records information about completed orders.
+   - `OrderID` is a unique identifier for each order.
+   - `UserID` links an order to the user who placed it.
+   - `OrderDate` records when the order was placed.
+   - `TotalPrice` includes the total cost of the order, considering discounts.
+   - `Status` indicates the current status of the order (e.g., processing, shipped, delivered).
+
+6. **OrderItems Table:**
+   - This table stores details about individual items within each order.
+   - `OrderItemID` is a unique identifier for each item within an order.
+   - `OrderID` links an item to the order it belongs to.
+   - `ProductID` links to the Products Table to specify the product in the order.
+   - `Quantity` indicates the quantity of a specific product in the order.
+   - `Price` and `Discount` record the price and discounts for each item at the time of purchase.
+
+These tables work together to manage your e-commerce site's product catalog, user accounts, shopping carts, orders, and inventory, allowing you to provide a seamless shopping experience for your customers while maintaining accurate tracking and management of products and orders.
