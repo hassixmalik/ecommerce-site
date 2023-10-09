@@ -27,7 +27,7 @@
         h1 {
             margin: 0;
         }
-        input[type="text"], input[type="password"] {
+        input{
             width: 100%;
             padding: 10px;
             margin: 10px 0;
@@ -47,10 +47,10 @@
 <body>
     <div class="container">
         <h1>Login into your account</h1>
-        <form>
-            <input type="text" placeholder="Username" required>
-            <input type="password" placeholder="Password" required>
-            <button type="submit">Login</button>
+        <form method="post" action="<?php echo base_url('adminauth'); ?>">
+            <input type="number" name='uid' placeholder="User ID" required>
+            <input type="password" name='password' placeholder="Password" required>
+            <button class='submit' type="submit">Login</button>
         </form>
     </div>
 </body>

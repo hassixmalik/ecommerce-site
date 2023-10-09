@@ -53,6 +53,8 @@ $route['default_controller'] = 'welcome';
 $route['shop'] = 'main/shop';
 $route['shopdetail'] = 'main/shopdetail';
 $route['adminlogin'] = 'main/admin';
+$route['adminauth'] = 'main/adminauth';
+
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
