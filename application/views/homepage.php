@@ -162,7 +162,7 @@
                             </div>
                         </div>
                         <div class="navbar-nav ml-auto py-0">
-                            <a href="" class="nav-item nav-link">Login</a>
+                            <a href="<?php echo base_url('adminlogin');?>" class="nav-item nav-link">Login</a>
                             <a href="" class="nav-item nav-link">Register</a>
                         </div>
                     </div>
@@ -255,7 +255,7 @@
             <div class="col-lg-4 col-md-6 pb-1">
                 <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
                     <p class="text-right">15 Products</p>
-                    <a href="" class="cat-img position-relative overflow-hidden mb-3">
+                    <a href="<?php echo base_url('shop');?>" class="cat-img position-relative overflow-hidden mb-3">
                         <img class="img-fluid" src="assets/img/cat-1.jpg" alt="">
                     </a>
                     <h5 class="font-weight-semi-bold m-0">Facial Products</h5>
@@ -264,7 +264,7 @@
             <div class="col-lg-4 col-md-6 pb-1">
                 <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
                     <p class="text-right">15 Products</p>
-                    <a href="" class="cat-img position-relative overflow-hidden mb-3">
+                    <a href="<?php echo base_url('shop');?>" class="cat-img position-relative overflow-hidden mb-3">
                         <img class="img-fluid" src="assets/img/cat-2.jpg" alt="">
                     </a>
                     <h5 class="font-weight-semi-bold m-0">Eyes Products</h5>
@@ -273,23 +273,14 @@
             <div class="col-lg-4 col-md-6 pb-1">
                 <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
                     <p class="text-right">15 Products</p>
-                    <a href="" class="cat-img position-relative overflow-hidden mb-3">
+                    <a href="<?php echo base_url('shop');?>" class="cat-img position-relative overflow-hidden mb-3">
                         <img class="img-fluid" src="assets/img/cat-3.jpg" alt="">
                     </a>
                     <h5 class="font-weight-semi-bold m-0">Lip Products</h5>
                 </div>
             </div>
 
-            <!--  -->
-            <!-- <div class="col-lg-4 col-md-6 pb-1">
-                <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
-                    <p class="text-right">15 Products</p>
-                    <a href="" class="cat-img position-relative overflow-hidden mb-3">
-                        <img class="img-fluid" src="img/cat-4.jpg" alt="">
-                    </a>
-                    <h5 class="font-weight-semi-bold m-0">Accerssories</h5>
-                </div>
-            </div> -->
+
             <div class="col-lg-4 col-md-6 pb-1">
                 <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
                     <p class="text-right">15 Products</p>
@@ -305,7 +296,8 @@
 
 
     <!-- Offer Start -->
-    <div class="container-fluid offer pt-5">
+    <!-- Uncomment when there are offers -->
+    <!-- <div class="container-fluid offer pt-5">
         <div class="row px-xl-5">
             <div class="col-md-6 pb-4">
                 <div class="position-relative bg-secondary text-center text-md-right text-white mb-2 py-5 px-5">
@@ -328,14 +320,14 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Offer End -->
 
 
     <!-- Products Start -->
     <div class="container-fluid pt-5">
         <div class="text-center mb-4">
-            <h2 class="section-title px-5"><span class="px-2">Trandy Products</span></h2>
+            <h2 class="section-title px-5"><span class="px-2">Trendy Products</span></h2>
         </div>
         <div class="row px-xl-5 pb-3">
             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
@@ -479,13 +471,14 @@
     <!-- Products End -->
 
 
+
     <!-- Subscribe Start -->
-    <div class="container-fluid bg-secondary my-5">
+    <!-- <div class="container-fluid bg-secondary my-5">
         <div class="row justify-content-md-center py-5 px-xl-5">
             <div class="col-md-6 col-12 py-5">
                 <div class="text-center mb-2 pb-2">
                     <h2 class="section-title px-5 mb-3"><span class="bg-secondary px-2">Stay Updated</span></h2>
-                    <p>Amet lorem at rebum amet dolores. Elitr lorem dolor sed amet diam labore at justo ipsum eirmod duo labore labore.</p>
+                    <p>Get Notifies on arrival of new products!</p>
                 </div>
                 <form action="">
                     <div class="input-group">
@@ -497,7 +490,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Subscribe End -->
 
 
