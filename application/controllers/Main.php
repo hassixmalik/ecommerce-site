@@ -39,4 +39,33 @@ class Main extends CI_Controller {
         $this->load->view('additems');
     }
 
+    public function additems(){
+        if ($this->input->post()) {
+            // Retrieve data from the form
+            $data = array(
+                'Category' => $this->input->post('category'),
+                'Title' => $this->input->post('title'),
+                'Price' => $this->input->post('price'),
+                'Discount' => $this->input->post('discount'),
+                'Description' => $this->input->post('description'),
+                'Size' => $this->input->post('size'),
+                'Shades' => $this->input->post('shades'),
+                'ImageURL' => $this->input->post('imageURL')
+            );
+
+            // Call the model method to insert the data into the database
+            if($this->User_model->insert_product($data)){
+                echo 'submitted';
+            }
+            else{
+                echo 'failed';
+            }
+
+            // You can add a success message or redirect the user to a success page here
+        }
+
+       
+        $this->load->view('adminview');
+    }
+
 }
