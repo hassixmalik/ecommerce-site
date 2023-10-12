@@ -35,4 +35,8 @@ class Main extends CI_Controller {
         }
     }
 
+    public function additemsview(){
+        $this->load->view('additems');
+    }
+
 }
