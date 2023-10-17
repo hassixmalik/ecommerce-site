@@ -67,14 +67,14 @@
     <div class="container">
         <h1>Product Entry Page</h1>
         <form enctype="multipart/form-data" action="<?php echo base_url('additems'); ?>">
-            <input type="text" placeholder="Category (e.g., facial, eyes, lips)" required>
-            <input type="text" placeholder="Title" required>
-            <input type="number" placeholder="Price" required>
-            <input type="number" placeholder="Discount">
-            <textarea placeholder="Description" rows="4" required></textarea>
-            <input type="text" placeholder="Size (optional)">
-            <input type="text" placeholder="Shades (optional)">
-            <input type="file" accept="image/*" id="imageInput" multiple>
+            <input type="text"   name='category' placeholder="Category (e.g., facial, eyes, lips)" required>
+            <input type="text"   name='title' placeholder="Title" required>
+            <input type="number" name='price' placeholder="Price" required>
+            <input type="number" name='discount' placeholder="Discount">
+            <textarea name='description' placeholder="Description" rows="4" required></textarea>
+            <input type="text" name='size' placeholder="Size (optional)">
+            <input type="text" name='shades' placeholder="Shades (optional)">
+            <input type="file" name='imageURL' accept="image/*" id="imageInput" multiple>
             <div class="selected-images" id="selectedImages"></div>
             <button type="submit">Add Product</button>
         </form>
