@@ -66,7 +66,7 @@
 <body>
     <div class="container">
         <h1>Product Entry Page</h1>
-        <form enctype="multipart/form-data" action="<?php echo base_url('additems'); ?>">
+        <form method="post" action="<?php echo base_url('additems'); ?>">
             <input type="text"   name='category' placeholder="Category (e.g., facial, eyes, lips)" required>
             <input type="text"   name='title' placeholder="Title" required>
             <input type="number" name='price' placeholder="Price" required>

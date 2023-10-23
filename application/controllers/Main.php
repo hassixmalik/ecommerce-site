@@ -41,6 +41,7 @@ class Main extends CI_Controller {
 
     public function additems(){
         if ($this->input->post()) {
+            echo '<script>console.log("Inside additems, got the input fields names")</script>';
             // Retrieve data from the form
             $data = array(
                 'Category' => $this->input->post('category'),
@@ -54,18 +55,15 @@ class Main extends CI_Controller {
             );
 
             // Call the model method to insert the data into the database
-            if($this->User_model->insert_product($data)){
-                echo 'submitted';
+            if($this->user_model->insert_product($data)){
+                echo '<script>console.log("submitted")</script>';
+                $this->load->view('adminview');
             }
             else{
-                echo 'failed';
-            }
-
+                echo '<script>console.log("we are fcked")</script>';
+            }   
             // You can add a success message or redirect the user to a success page here
         }
-
-       
-        $this->load->view('adminview');
     }
 
 }
