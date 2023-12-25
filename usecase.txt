@@ -1,0 +1,31 @@
+Actors:
+
+"Citizens" (representing regular people who report potholes)
+"Repair Crew" (representing public works department employees responsible for repairs)
+"System Administrator" (representing those who manage the PHTRS system)
+Use Cases:
+
+Citizens:
+
+"Report Pothole"
+"Report Damage"
+Repair Crew:
+
+"Manage Work Orders"
+"Update Work Order Status"
+System Administrator:
+
+"Manage Users"
+"Configure System"
+Connections:
+
+Connect "Citizens" to "Report Pothole" and "Report Damage."
+Connect "Repair Crew" to "Manage Work Orders" and "Update Work Order Status."
+Connect "System Administrator" to "Manage Users" and "Configure System."
+System Boundary:
+
+Draw a box around the use cases and actors to represent the PHTRS system.
+Include Relationships (if applicable):
+
+If any use cases have relationships, you can draw those lines between the related use cases (e.g., an "include" or "extend" relationship).
+

@@ -1,0 +1,23 @@
+Functional Requirements:
+1. **Pothole Reporting:** The system must allow citizens to log in and report potholes by providing the location and severity information. This information should be stored in the database.
+
+2. **Pothole Logging:** Each reported pothole should be logged in the "public works department repair system" with a unique identifying number, along with details such as street address, size, location, district, and repair priority.
+
+3. **Work Order Management:** The system should manage work orders for pothole repairs, including tracking pothole location and size, assigning repair crews, recording crew details, equipment allocation, repair status, material usage, and cost calculation.
+
+4. **Damage Reporting:** The system should allow citizens to report damage caused by potholes, capturing information like the citizen's name, address, phone number, type of damage, and the dollar amount of damage.
+
+5. **Interactive Queries:** The system should support interactive queries to retrieve information about potholes, their repair status, damage reports, and associated data.
+
+Non-Functional Requirements:
+1. **Usability:** The system should have an intuitive user interface and provide an easy-to-use experience for citizens reporting potholes and public works personnel managing repairs.
+
+2. **Performance:** The system must respond to user requests promptly and handle a large volume of pothole reports and repair data efficiently.
+
+3. **Security:** Data in the system, including citizen information and repair data, should be securely stored and only accessible by authorized personnel. It should also ensure the privacy of citizens reporting potholes.
+
+4. **Reliability:** The system should be available 24/7, with minimal downtime for maintenance, to ensure that citizens can report potholes at any time.
+
+5. **Scalability:** The system should be designed to scale as the number of reported potholes and repair requests increase, without a significant degradation in performance.
+
+These requirements encompass the core functionality of the Pothole Tracking and Repair System (PHTRS) and address various non-functional aspects to ensure a robust and user-friendly system.

@@ -1,0 +1,42 @@
+Certainly! Here's a simplified class model for the Pothole Tracking and Repair System (PHTRS):
+
+**Classes:**
+
+1. **Pothole**
+   - Attributes: identifyingNumber, streetAddress, size, location, district, repairPriority
+   - Operations: getDetails()
+
+2. **WorkOrder**
+   - Attributes: potholeLocation, repairCrewID, numberOfCrewMembers, equipmentAssigned, hoursApplied, holeStatus, fillerMaterialUsed, repairCost
+   - Operations: createOrder(), updateOrder(), closeOrder()
+
+3. **DamageReport**
+   - Attributes: citizenName, citizenAddress, damageType, damageCost
+   - Operations: createReport()
+
+4. **User**
+   - Attributes: username, password, role
+   - Operations: login(), logout()
+
+5. **SystemAdministrator**
+   - Attributes: adminID
+   - Operations: manageUsers(), configureSystem()
+
+**Associations:**
+
+- Pothole has a one-to-one relationship with WorkOrder.
+- Citizen has a one-to-many relationship with DamageReport.
+- User (Repair Crew and Citizen) has a one-to-one relationship with WorkOrder and DamageReport.
+- SystemAdministrator manages User accounts.
+
+This class model represents the core classes in the PHTRS system and their associations. Here's what each class and association represents:
+
+- "Pothole" class stores information about individual potholes reported, such as location, size, and repair priority.
+- "WorkOrder" class represents the work orders created for pothole repairs, tracking details like assigned crew, equipment, and repair status.
+- "DamageReport" class holds information about damage caused by potholes, including the citizen's name, damage type, and cost.
+- "User" class represents the users of the system, storing login credentials and role information.
+- "SystemAdministrator" class manages user accounts and system configurations.
+
+The associations show how these classes are connected or related. For example, "Pothole" is associated with "WorkOrder" to track the work orders related to specific potholes. Similarly, "User" is associated with "WorkOrder" and "DamageReport" to link user actions to these entities.
+
+Please note that this is a simplified representation, and the actual class model may include more attributes and methods based on the specific requirements and functionalities of the PHTRS system.

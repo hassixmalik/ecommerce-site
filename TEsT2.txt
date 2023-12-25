@@ -1,0 +1,63 @@
+a) UML Use Case Diagram for the PHTRS System:
+
+PHTRS Use Case Diagram
+
+In the use case diagram:
+
+The "Citizen" represents users from the general public.
+"Repair Crew" represents the public works department employees responsible for repairing potholes.
+"System Administrator" represents those responsible for managing the PHTRS system.
+b) Use Cases for the PHTRS System:
+
+Report Pothole
+
+Actors: Citizen
+Description: This use case allows citizens to report potholes by providing location and severity information.
+Manage Work Orders
+
+Actors: Public Works Department (Repair Crew)
+Description: Repair crews can create, update, and close work orders for pothole repairs.
+View Pothole Information
+
+Actors: Repair Crew, System Administrator
+Description: Authorized users can view details about reported potholes, including location, size, repair status, and damage reports.
+Manage System
+
+Actors: System Administrator
+Description: System administrators can manage user accounts, access control, and system configurations.
+Record Damage Report
+
+Actors: Citizen
+Description: Citizens can report damage caused by potholes, including their name, address, and the type and cost of damage.
+c) Class Model for the PHTRS System:
+
+Below is a simplified class model for the PHTRS system:
+
+Classes:
+
+Pothole
+
+Attributes: identifyingNumber, streetAddress, size, location, district, repairPriority
+Operations: getDetails()
+WorkOrder
+
+Attributes: potholeLocation, repairCrewID, numberOfCrewMembers, equipmentAssigned, hoursApplied, holeStatus, fillerMaterialUsed, repairCost
+Operations: createOrder(), updateOrder(), closeOrder()
+DamageReport
+
+Attributes: citizenName, citizenAddress, damageType, damageCost
+Operations: createReport()
+User
+
+Attributes: username, password, role
+Operations: login(), logout()
+SystemAdministrator
+
+Attributes: adminID
+Operations: manageUsers(), configureSystem()
+Associations:
+
+Pothole has a one-to-one relationship with WorkOrder.
+Citizen has a one-to-many relationship with DamageReport.
+User (Repair Crew and Citizen) has a one-to-one relationship with WorkOrder and DamageReport.
+SystemAdministrator manages User accounts.
